@@ -39,11 +39,11 @@ public abstract class DAOFactory {
 	
 	public abstract void closeConnection();
 	
-	public abstract void startTransfer();
+	public abstract void startTransaction();
 	
-	public abstract void confirmTransfer();
+	public abstract void confirmTransaction();
 	
-	public abstract void cancelTranfer();
+	public abstract void cancelTransaction();
 	
 	
 	public abstract EstadoTipoRelacionInstitucionDAO getEstadoTipoRelacionInstitucionDAO();
