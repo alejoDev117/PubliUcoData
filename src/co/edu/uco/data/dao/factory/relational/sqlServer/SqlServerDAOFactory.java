@@ -28,24 +28,25 @@ public final class SqlServerDAOFactory extends DAOFactory {
 		// TODO Auto-generated method stub
 		
 	}
-
+	
+	
 	@Override
-	public final void startTransfer() {
+	public void startTransaction() {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public final void confirmTransfer() {
+	public void confirmTransaction() {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public final void cancelTranfer() {
+	public void cancelTransaction() {
 		// TODO Auto-generated method stub
-		
 	}
+
 
 	@Override
 	public EstadoTipoRelacionInstitucionDAO getEstadoTipoRelacionInstitucionDAO() {
@@ -58,4 +59,8 @@ public final class SqlServerDAOFactory extends DAOFactory {
 		return new TipoRelacionInstitucionSqlServerDAO(connection);
 	}
 
+
+	
 }
+
+

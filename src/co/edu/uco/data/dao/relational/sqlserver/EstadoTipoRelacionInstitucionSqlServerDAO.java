@@ -15,7 +15,7 @@ public final class EstadoTipoRelacionInstitucionSqlServerDAO implements EstadoTi
 
 	@Override
 	public final void create(final EstadoTipoRelacionInstitucionEntity entity) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 

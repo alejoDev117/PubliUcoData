@@ -22,22 +22,25 @@ public final class PostgresSqlDAOFactory extends DAOFactory{
 	}
 
 	@Override
-	public final void startTransfer() {
+	public void startTransaction() {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public final void confirmTransfer() {
+	public void confirmTransaction() {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public final void cancelTranfer() {
+	public void cancelTransaction() {
 		// TODO Auto-generated method stub
 		
 	}
+
+		
+	
 
 	@Override
 	public final EstadoTipoRelacionInstitucionDAO getEstadoTipoRelacionInstitucionDAO() {
@@ -50,5 +53,7 @@ public final class PostgresSqlDAOFactory extends DAOFactory{
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
 
 }
