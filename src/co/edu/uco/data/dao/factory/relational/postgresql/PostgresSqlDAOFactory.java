@@ -1,12 +1,21 @@
 package co.edu.uco.data.dao.factory.relational.postgresql;
 
+import java.sql.Connection;
+
+import co.edu.uco.crosscutting.utils.UtilSql;
 import co.edu.uco.data.dao.EstadoTipoRelacionInstitucionDAO;
 import co.edu.uco.data.dao.TipoRelacionInstitucionDAO;
 import co.edu.uco.data.dao.factory.DAOFactory;
+import co.edu.uco.data.dao.relational.sqlserver.EstadoTipoRelacionInstitucionSqlServerDAO;
+import co.edu.uco.data.dao.relational.sqlserver.TipoRelacionInstitucionSqlServerDAO;
 
 public final class PostgresSqlDAOFactory extends DAOFactory{
 	
+	Connection connection;
 	
+	public PostgresSqlDAOFactory() {
+		openConnection();
+	}
 
 
 	@Override
@@ -17,7 +26,7 @@ public final class PostgresSqlDAOFactory extends DAOFactory{
 
 	@Override
 	public final  void closeConnection() {
-		// TODO Auto-generated method stub
+		UtilSql.closeConnection(connection);
 		
 	}
 
@@ -44,14 +53,12 @@ public final class PostgresSqlDAOFactory extends DAOFactory{
 
 	@Override
 	public final EstadoTipoRelacionInstitucionDAO getEstadoTipoRelacionInstitucionDAO() {
-		// TODO Auto-generated method stub
-		return null;
+		return new EstadoTipoRelacionInstitucionSqlServerDAO(connection);
 	}
 
 	@Override
 	public TipoRelacionInstitucionDAO getTipoRelacionInstitucionDAO() {
-		// TODO Auto-generated method stub
-		return null;
+		return new TipoRelacionInstitucionSqlServerDAO(connection);
 	}
 
 

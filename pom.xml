@@ -28,5 +28,10 @@
          <artifactId>PubliUcoEntities</artifactId>
          <version>0.0.1-SNAPSHOT</version>
 	  </dependency>
-  </dependencies>
+	  <dependency>
+	  	<groupId>co.edu.uco.compuconnect</groupId>
+	  	<artifactId>CompuconnectAPI</artifactId>
+	  	<version>0.0.1-SNAPSHOT</version>
+	  </dependency>
+    </dependencies>
 </project>
