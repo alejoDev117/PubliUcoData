@@ -1,0 +1,23 @@
+package co.edu.uco.data.dao;
+
+import java.util.List;
+
+
+
+import co.edu.uco.entities.LectorEntity;
+
+
+
+
+public interface LectorDAO {
+	
+	void create(LectorEntity entity);
+	
+	List<LectorEntity> read(LectorEntity entity);
+	
+	void update(LectorEntity entity);
+	
+	void delete(LectorEntity entity);
+	
+	
+}
