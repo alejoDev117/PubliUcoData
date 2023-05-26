@@ -1,4 +1,4 @@
-package co.edu.uco.data.dao;
+package co.edu.uco.data.dao.relational;
 
 public enum Factory {
 

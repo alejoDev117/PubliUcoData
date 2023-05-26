@@ -23,7 +23,6 @@ import co.edu.uco.data.dao.EstadoTipoEscritorDAO;
 import co.edu.uco.data.dao.EstadoTipoIdentificacionDAO;
 import co.edu.uco.data.dao.EstadoTipoRelacionInstitucionDAO;
 import co.edu.uco.data.dao.EstadoVersionDAO;
-import co.edu.uco.data.dao.Factory;
 import co.edu.uco.data.dao.HistorialAccesoPublicacionDAO;
 import co.edu.uco.data.dao.LectorDAO;
 import co.edu.uco.data.dao.PalabraClavePublicacionDAO;
@@ -44,6 +43,7 @@ import co.edu.uco.data.dao.TipoRevisionDAO;
 import co.edu.uco.data.dao.VersionDAO;
 import co.edu.uco.data.dao.factory.relational.postgresql.PostgresSqlDAOFactory;
 import co.edu.uco.data.dao.factory.relational.sqlServer.SqlServerDAOFactory;
+import co.edu.uco.data.dao.relational.Factory;
 
 
 public abstract class DAOFactory {
